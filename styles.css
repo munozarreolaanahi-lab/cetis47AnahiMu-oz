@@ -1,0 +1,116 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3131338e;
+    color:#cecece;
+}
+header{
+    text-align: center;
+    background-color: #ffffff;
+    color:#000000;
+    padding: 20px 0;
+    font-size: 20px;/*tamaño del texto*/
+    text-shadow: 2px 2px 5px #8281a5;/*sombra del texto*/
+}
+nav{
+    display: flex;/*organizar el contenido*/
+    justify-content: space-between;/*espacia los elementos*/
+    align-items: center;/*alinea verticalmente*/
+    background-color:#000000;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;/*quitar viñetas*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;/*espacio en cada enlace*/
+}
+nav ul li {
+    display: inline; /*cada elemento se mustra en una linea*/
+}
+    nav ul li a{
+        text-decoration: none;/*quitar el subrayado*/
+        color: #ffffff;
+        font-weight: bold;/*texto en negritas*/
+        transition: color 0.3s;
+    }
+    nav ul li a:hover{
+        color:rgb(71, 9, 9) /*cambia de color al pasar el curso*/
+    }
+    nav form{
+        display: flex;
+        gap: 5 px;
+    }
+    nav input[type="search"]{
+        padding: 5px;
+        border: none;/*borde none es sin bordes*/
+        border-radius: 2px;/*borde redondeado*/
+    }
+    nav input[type="submit"]{
+        background-color: #cacaca;
+        color: #030122;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;/*cambiar pulsor al pasar*/
+    }
+    nav input[type="submit"]:hover{
+        background-color: #ffffff;
+    }
+
+    /*contenido principal*/
+    main{
+        display: flex;
+        margin: 20px;
+        gap: 20px;
+    }
+    article{
+        flex: 3;/*ocupa 3 veces el espacio*/
+        background-color: #020114;
+        padding: 20px;
+        border: 1px solid#494646;/*borde gris claro*/
+        border-radius: 8px;/*borde redondeado*/
+    }
+    article h2{
+        text-align: center;
+        font-size: 24px;
+        color:#ffffff
+    }
+    article h3{
+        color: #ffffff;
+        margin-top: 15px;/*espacio de arriba*/
+    }
+
+     /* barra lateral "RELACIONADO"*/
+     aside{
+        flex: 1;
+        background-color: rgba(75, 83, 83, 0.486);
+        padding: 20px;
+        border-radius: 8px;
+     }
+     aside h2{
+        color: #000000;
+     }
+     aside ul{
+         list-style: disc;/*viñetas circulares*/
+         padding-left:20px ;
+     }
+     aside ul li a{
+        text-decoration: none;
+        color: #020114;
+     }
+     aside ul li a:hover{
+        color:rgba(43, 1, 1, 0.836)
+     }
+     /*pie de pagina*/
+     footer{
+        background-color: #4a4a50;
+        color: #fdfff7;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 14px;
+     }
